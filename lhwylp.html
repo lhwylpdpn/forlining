@@ -1,5 +1,5 @@
 <html lang="zh-CN" >
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="refresh" content="60">
 <head>
   <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
@@ -13,12 +13,21 @@
   <script>
     //左侧Javascript代码
   </script>
+
+<script language="javascript"> 
+function test() 
+{ 
+var objShell = new ActiveXObject("wscript.shell"); 
+objShell.exec("clac_static.py"); 
+objShell = null; 
+} 
+</script> 
 </head>
 <body>
 
 <nav class="navbar navbar-inverse navbar-static-top">
   <div class="container">
-    ...
+   
   </div>
 </nav>
 	<div class="container-fluid" >
@@ -56,9 +65,9 @@
 
  			 <div class="col-md-2">
 				  <div  class="panel panel-default">
-				  <div class="panel-heading">最大仓位</div>
-				  <div class="panel-body " style="height:90px" id="data4">
-				  
+				  <div class="panel-heading">嘉盛程序正确性</div>
+				  <div class="panel-body " style="height:90px" id="data4" >
+				  <h1>尚未统计</h1>
 				  </div>
  				  </div>
 
@@ -66,9 +75,9 @@
 
 			  <div class="col-md-2">
 				  <div  class="panel panel-default">
-				  <div class="panel-heading">最大回撤</div>
+				  <div class="panel-heading">lmx程序正确性</div>
 				  <div class="panel-body"style="height:90px" id="data5">
-		
+		 <h1>尚未统计</h1>
 				  </div>
  				  </div>
 			  </div>
@@ -108,6 +117,41 @@
  				 </div>
   </div>
 </div>
+
+
+
+<div class="row">
+			  <div class="col-md-12">
+
+
+				<div  class="panel panel-default">
+			  <div class="panel-heading">分品种情况</div>
+			  <div class="panel-body">
+			   					<table class="table table-condensed  table-hover">
+							      <thead>
+							        <tr>
+							          <th>品种</th>
+							          <th>开单数</th>
+							          <th>正常平仓单比例</th>
+							          <th>最大持仓数</th>
+							          <th>正态单持仓时间</th>
+							          <th>补单持仓时间</th>
+							          <th>正态单总盈利</th>
+							          <th>补单总盈利</th>
+							        </tr>
+							      </thead>
+							      <tbody id='data7'>
+							        
+							      </tbody>
+							    </table>
+			  </div>
+
+
+ 				 </div>
+  </div>
+</div
+
+
 </div>
 
 
